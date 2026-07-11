@@ -30,7 +30,7 @@ client = boto3.client("rds-data", region_name=region)
 with open("migrations/001_schema.sql") as f:
     sql = f.read()
 
-# Define statements in order (since splitting is complex)
+# Define statements in order (since splitting is complex) uadated
 statements = [
     # Extension
     'CREATE EXTENSION IF NOT EXISTS "uuid-ossp"',
